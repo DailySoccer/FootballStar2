@@ -65,7 +65,7 @@ function InitStart () {
 	var ballZ : float = -37; //( Random.value < 0.5 ) ? -27 : 27;
 	
 	var ballX : float = -(Pitch.GetComponent(SoccerPitch).PitchWidth-10)/2 + (Random.value * (Pitch.GetComponent(SoccerPitch).PitchWidth-10));
-	//gameObject.transform.position = Vector3(ballX, Radius, ballZ);
+	gameObject.transform.position = Vector3(ballX, Radius, ballZ);
 	
 	ShotAtGoal = "";
 

@@ -300,7 +300,7 @@ function CalculateSave () {
 	gkAnimation = gameObject.transform.FindChild("Player_Local").gameObject.GetComponent.<Animation>();
 	Debug.Log("Saveanim: " + gameObject + ", " + SaveAnim + ", " + animsTimes[SaveAnim] + ", " + crossingTime);
 	var animTime : float = animsTimes[SaveAnim];
-	if (animTime > crossingTime) {
+	if(animTime > crossingTime && crossingTime > 0) {
 		gkAnimation.GetComponent.<Animation>()[SaveAnim].speed = animTime/crossingTime;
 	} else {
 		gkAnimation.GetComponent.<Animation>()[SaveAnim].speed = 1;
