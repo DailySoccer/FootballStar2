@@ -298,7 +298,7 @@ function CalculateSave () {
 	
 	gkPlane = goalKeeperPlane;
 	gkAnimation = gameObject.transform.FindChild("Player_Local").gameObject.GetComponent.<Animation>();
-	Debug.Log("Saveanim: " + gameObject + ", " + SaveAnim + ", " + animsTimes[SaveAnim] + ", " crossingTime);
+	Debug.Log("Saveanim: " + gameObject + ", " + SaveAnim + ", " + animsTimes[SaveAnim] + ", " + crossingTime);
 	var animTime : float = animsTimes[SaveAnim];
 	if (animTime > crossingTime) {
 		gkAnimation.GetComponent.<Animation>()[SaveAnim].speed = animTime/crossingTime;
