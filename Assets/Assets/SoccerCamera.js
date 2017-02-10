@@ -5,10 +5,14 @@ var PhysicBall : GameObject;
 var PlayerTeam : GameObject;
 
 private var ZonesLimits = [-55.0,15.0,25.0,55.0];
+
+//*
 private var Heights = [18.0,18.0,18.0,18.0];
-//private var Heights = [6.0,6.0,3.0,3.0];
 private var Zooms = [22.0,22.0,22.0,22.0];
-//private var Zooms = [22.0,22.0,18.0,14.0];
+/*/
+private var Heights = [3.0,3.0,3.0,3.0];
+private var Zooms = [10.0,10.0,10.0,10.0];
+/**/
 
 private var AttackZoneZ = 15; // Coordenada Z donde se considera que comienza la zona de ataque 
 
